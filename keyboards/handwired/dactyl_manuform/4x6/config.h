@@ -23,15 +23,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* USB Device descriptor parameter */
 #define PRODUCT_ID      0x3436
 #define DEVICE_VER      0x0001
+#define DESCRIPTION     A split keyboard for the cheap makers
 
 /* key matrix size */
 // Rows are doubled-up
-#define MATRIX_ROWS 10
-#define MATRIX_COLS 6
+#define MATRIX_ROWS 8
+#define MATRIX_COLS 7
 
 // row-driven
-#define MATRIX_ROW_PINS { F7, B1, B3, B2, B6 }
-#define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
+#define MATRIX_COL_PINS_RIGHT { F7, D4, C6, D7, E6, B4, B5 }
+#define MATRIX_ROW_PINS { B1, B3, B2, B6 }
+
+#define MATRIX_COL_PINS { B5, B4, E6, D7, C6, D4, F7 }
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
