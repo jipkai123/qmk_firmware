@@ -39,6 +39,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
-// WS2812 RGB LED strip input and number of LEDs
-#define RGB_DI_PIN D3
-#define RGBLED_NUM 12
+// Default tapping term is 200
+#define TAPPING_TERM 200
+
+// Prevent normal rollover on alphas from accidentally triggering mods.
+#define IGNORE_MOD_TAP_INTERRUPT
+
+// This prevents accidental repeats of the tap-hold keys when typing quickly.
+//#define TAPPING_FORCE_HOLD_PER_KEY
+
+// This prevents short hold periods to be interpreted as individual taps when typing quickly.
+#define PERMISSIVE_HOLD
